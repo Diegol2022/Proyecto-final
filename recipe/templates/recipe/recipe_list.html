@@ -1,0 +1,33 @@
+{% extends "home/index.html" %}
+{% load static %}
+{% block coderhouse_project_content %}
+
+<h2>Lista de Recetas</h2>
+{% if user.is_authenticated %}
+<a class="card_custom" href="{% url 'recipe:recipe-add' %}">Crear nueva Receta</a>
+{% endif %}
+<hr></hr>
+<ul>
+    {% for recipe in recipe_list %}
+    <li>
+        {{recipe}}
+        (
+            <a href="{% url 'recipe:recipe-detail' recipe.id %}">
+                <i class="fa fa-eye" style="color: rgb(0, 0, 255);"> </i>
+            </a>
+        {% if user.is_authenticated %}
+        |
+        <a href="{% url 'recipe:recipe-update' recipe.id %}">
+            <i class="fa fa-pencil" style="color: rgb(0, 0, 190);"> </i>
+        </a>
+        |
+        <a href="{% url 'recipe:recipe-delete' recipe.id %}">
+            <i class="fa fa-trash" style="color: rgb(0, 0, 100);"> </i>
+        </a>
+        {% endif %}
+        )
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

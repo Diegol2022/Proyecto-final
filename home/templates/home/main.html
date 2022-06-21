@@ -10,13 +10,13 @@
     <img height="160px" src="{{url}}" alt="">
 </div>
 {% endif %}
-<h2>Buscador de cursos</h2>
+<h2>Buscador de recetas</h2>
 <hr>
 </hr>
 
 <form action="/search" method="GET">
     <div>
-        <input type="text" name="search_param" id="course_code_or_name" placeholder="Buscar.."
+        <input type="text" name="search_param" id="recipe_name" placeholder="Buscar.."
         {% if search_param %} value="{{ search_param }}" {% endif %}
         >
         <input type="submit" value="Buscar">
@@ -29,12 +29,11 @@
 </hr>
 
 
-{% if courses %}
+{% if recipes %}
 <ul>
-    {% for course in courses %}
+    {% for recipe in recipes %}
     <li>
-        Curso: {{course.name}}
-        -- Camada: {{course.code}}
+        Curso: {{recipe.name}}
     </li>
     {% endfor %}
 </ul>

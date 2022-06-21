@@ -1,0 +1,11 @@
+{% extends "home/index.html" %}
+{% load static %}
+{% block coderhouse_project_content %}
+
+<h2>Detalle de la receta</h2>
+<hr></hr>
+<p><h3>Receta: {{ recipe.name }}</h3></p>
+<h4>Descripción:</h4>
+<p><textarea readonly rows="7" cols="90" >{{ recipe.description }}</textarea></p>
+<p><a class="btn2 btn-primary" href="{% url 'recipe:recipe-list' %}">Regresar a la lista de recetas</a></p>
+{% endblock %}
