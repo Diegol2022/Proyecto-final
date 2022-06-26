@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('user/', include('user.urls')),
     path('recipe/', include('recipe.urls')),
+
 ]
 
 if settings.DEBUG:

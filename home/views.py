@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.db.models import Q
 
@@ -43,3 +44,5 @@ def search(request):
         context=context_dict,
         template_name="home/main.html",
     )
+def about(request):
+    return render(request, "home/about.html")
