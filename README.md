@@ -1,3 +1,11 @@
+# Integrantes del equipo
+
+- Diego Aguerre: Integración de la APP recipe 
+- Diego Boim: Creador de la APP recipe
+- Elias Rial: Completamiento y prueba del blog. Creador del "acerca de"
+
+
+
 # Instrucciones para ejecutar este proyecto
 
 - Clonar el proyecto y cambiar de rama
