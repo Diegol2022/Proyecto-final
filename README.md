@@ -2,11 +2,11 @@
 
 - Clonar el proyecto y cambiar de rama
 ```bash
-git clone https://github.com/coder-live-class/django-coderhouse-project.git
+git clone https://github.com/Diegol2022/Proyecto-final.git
 
-cd django-coderhouse-project
+cd Proyecto-final
 
-git checkout class_25
+git checkout main
 
 ```
 
@@ -139,5 +139,5 @@ git pull origin master
 Sirve para cambiar la dirección url del repositorio que tenemos por origin.
 ```bash
 git remote set-url origin <url_de_tu_repositorio_en_GitHub>
-git remote set-url origin https://github.com/coder-live-class/django-coderhouse-project.git
+git remote set-url origin https://github.com/Diegol2022/Proyecto-final.git
 ```
