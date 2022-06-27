@@ -1,6 +1,6 @@
 # Integrantes del equipo
 
-- Diego Aguerre: Integración de la APP recipe 
+- Diego Aguerre: Integración de la APP recipe con lo existente.
 - Diego Boim: Creador de la APP recipe y armado del Git-hub
 - Elias Rial: Completamiento y prueba del blog. Creador del "acerca de"
 
